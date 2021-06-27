@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>WhoPlusYou Coding Challenge</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="challenge.js"></script>
+    <link rel="stylesheet" href="challenge.css">
+    </head>
+
+<body>
+  <div class="img">
+    <img class="logo" src="wpy_logo.png"  alt="..." >
+  </div>
+  <h1>Coding Challenge!</h1>
+  <hr>
+  <div class="jumbotron jumbotron-fluid" style=" text-align:center;">
+    <h2>Registration</h2>
+    <form name="myForm" action="/register.php" onsubmit="return validateForm()" method="post" required>
+        <label for="firstName">First Name</label><br>
+        <input class="form-control" type="text" id="firstName" name="firstName" maxlength="255"><br>
+        <label for="lastName">Last Name</label><br>
+        <input class="form-control" type="text" id="lastName" name="lastName" maxlength="255"><br>
+        <label for="email">Email:</label><br>
+        <input class="form-control" type="email" id="email" name="email"><br>
+        <label for="password">Password</label><br>
+        <input class="form-control" type="password" id="Password" name="password"><br>
+        <label for="phone">Phone Number(xxx-xxx-xxxx)</label><br>
+        <input class="form-control" type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+        <label for="address">Address</label><br>
+        <input class="form-control" type="text" id="address" name="address" maxlength="255"><br>
+        <label for="city">City:</label><br>
+        <input class="form-control" type="text" id="city" name="city" maxlength="255"><br>
+        <label for="province">Province</label><br>
+        <select class="form-select" style="width:auto" id="province" name="province">
+          <option value="">Select your province</option>
+          <option value="Alberta">Alberta</option>
+          <option value="British Columbia">British Columbia</option>
+          <option value="Manitoba">Manitoba</option>
+          <option value="New Brunswick">New Brunswick</option>
+          <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+          <option value="Nova Scotia">Nova Scotia</option>
+          <option value="Ontario">Ontario</option>
+          <option value="Prince Edward Island">Prince Edward Island</option>
+          <option value="Quebec">Quebec</option>
+          <option value="Saskatchewan">Saskatchewan</option>
+          <option value="Northwest Territories">Northwest Territories</option>
+          <option value="Nunavut">Nunavut</option>
+          <option value="Yukon">Yukon</option>
+        </select><br>
+        <label for="country">Country</label><br>
+        <select class="form-select" style="width:auto" id="country" name="country">
+          <option value="">Select your country</option>
+          <option value="Canada">Canada</option>
+          <option value="United States">United States</option>
+        </select><br>
+        <input class="btn btn-primary" type="submit" value="Submit">
+      </form> 
+    </div>
+</body>
+</html>
